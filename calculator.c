@@ -10,20 +10,29 @@ void main()
    printf("\n1 for Addition.\n2 for Subtraction.\n3 for Multiplication.");
    printf("\n4 for Division.\n");
    scanf("%d",&choice);
-   switch(choice){
-case 1: result = a+b;
+   
+ if(choice==1)
+ {	result = a+b;
 	printf("\nThe sum of %lf and %lf is: %lf",a,b,result);
-	break;
-case 2: result = a-b;
+ }
+ 
+ else if(choice==2)
+   {	result = a-b;
 	printf("\nThe difference of %lf and %lf is: %lf",a,b,result);
-	break;
-case 3: result = a*b;
+   }
+ 
+   else if(choice==3)
+   {	result = a*b;
 	printf("\nThe product of %lf and %lf is: %lf",a,b,result);
-	break;
-case 4: result = a/b;
+   }
+ 
+  else if(choice==4)  
+  {	result = a/b;
 	printf("\nThe quotient of %lf and %lf is: %lf",a,b,result);
-	break;
-default:"invalid choice";
-}
-getch();
+  }
+ 
+    else
+        printf("invalid choice");
+
+ getch();
 }
